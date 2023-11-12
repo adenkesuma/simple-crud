@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/6550511092eaf5c32e29d72f
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Aden Kesuma",
+    "email": "aden@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH http://localhost:5000/users/6550511092eaf5c32e29d72f
+Content-Type: application/json
+
+{
+    "name": "Aden Kesuma update",
+    "email": "aden@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:5000/users/6550511092eaf5c32e29d72f
